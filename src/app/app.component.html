@@ -1,0 +1,12 @@
+<h1>論文整形ツール</h1>
+<div>
+	<div fxLayout="row" fxLayoutWrap="wrap">
+		<div class="container" fxFlex="50%">
+			<textarea fxFlex [(ngModel)]="input"></textarea>
+		</div>
+		<div class="container" fxFlex="50%">
+			<textarea fxFlex [(ngModel)]="output"></textarea>
+		</div>
+	</div>
+	<button (click)="clicked()">変換</button>
+</div>
