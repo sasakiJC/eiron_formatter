@@ -26,6 +26,7 @@
     "@angular/platform-browser": "^4.4.2",
     "@angular/platform-browser-dynamic": "^4.4.2",
     "core-js": "^2.5.1",
+    "electron-config": "^1.0.0",
     "rxjs": "^5.4.3",
     "systemjs": "^0.19.27",
     "zone.js": "^0.8.4"

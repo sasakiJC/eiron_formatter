@@ -10,7 +10,10 @@ export class AppComponent {
 	output:string;
 
 	clicked() {
-		this.output = this.input.replace(/\r?\n/g, ' ');
-		console.log(this.output);
+		this.output = this.input
+			.replace(/(\w)-\r?\n/g, '$1')
+			.replace(/\r?\n/g, ' ')
+			.replace(/(\w)- /g, '$1')
+			.replace(/(\.) ([A-Z])/g, '$1\r\n\r\n$2');
 	}
 }
