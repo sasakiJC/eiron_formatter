@@ -14,6 +14,7 @@ export class AppComponent {
 			.replace(/(\w)-\r?\n/g, '$1')
 			.replace(/\r?\n/g, ' ')
 			.replace(/(\w)- /g, '$1')
-			.replace(/(\.) ([A-Z])/g, '$1\r\n\r\n$2');
+			.replace(/(\.) ([A-Z])/g, '$1\r\n\r\n$2')
+			.replace(/(\?) ([A-Z])/g, '$1\r\n\r\n$2');
 	}
 }
